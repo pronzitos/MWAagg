@@ -2569,6 +2569,31 @@ var arrowdownB = $('pre[id^="arrowdownB-"]').hide(),
 
 })();
 
+//////////////////ASCI CORNICE HOME //////////////////
+
+var borderSX = $('pre[id^="borderSX-"]').hide(),
+    o = 0;
+(function cycle() {
+    borderSX.eq(o).show(0)
+        .delay(150)
+        .hide(0, cycle);
+
+    o = ++o % borderSX.length;
+
+})();
+
+var borderDX = $('pre[id^="borderDX-"]').hide(),
+    z = 0;
+(function cycle() {
+    borderDX.eq(z).show(0)
+        .delay(150)
+        .hide(0, cycle);
+
+    z = ++z % borderDX.length;
+
+})();
+
+
 
 
 

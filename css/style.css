@@ -1229,3 +1229,62 @@ canvas {
 
 #poster{height:20rem;
 margin-top:-5rem;}
+
+
+/*HOME*/
+
+.wkLayoutImg {
+    width: 12vw;
+    height: auto;
+    padding: 0rem;
+    
+    
+}
+
+.bordoStondato{
+    
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#pepe{
+    width: 14vw;
+    height: auto;
+    padding: 0rem;
+}
+
+#memeInfo {
+    position: absolute;
+    z-index: 1;
+    height: 14vh;
+    width: auto;
+    transform-origin: center;
+    transform: rotate(-8deg) translateY(-2rem) translateX(4rem); 
+    transition: 0.4s ease-in-out;
+}
+
+#memeInfo:hover {
+    position: absolute;
+    z-index: 1;
+    height: 14vh;
+    width: auto;
+    transform-origin: center;
+    transform: rotate(-18deg) translateY(-2rem) translateX(4rem); 
+    transition: 0.7s ease-in-out;
+}
+
+.colAscii{
+    height: 38rem;
+    overflow: hidden;
+}
+
+.supHome{
+    padding: 0.1rem;
+    height: 1rem;
+    width: 1rem;
+    border: 0.01rem solid black;
+    margin-right: 0.5rem;
+}
+
+
