@@ -12,6 +12,8 @@
         <link rel="icon" type="image/x-icon" href=""/>
     </head>
 
+
+
     <!--Navbar-->
     <body style="background-color: black;">
 
@@ -119,7 +121,7 @@
             <div class="container-fluid pt-5">
                 <div class="bottone row" data-toggle="collapse" data-target="#secondo" aria-expanded="false" aria-controls="collapseExample">
                     <div class="col-md-10 pl-4 align-self-center">
-                        <p class="titoli_about">MEMETIC WARFARE ARCHIVE?</p> 
+                        <p class="titoli_about">MEMETIC WARFARE ARCHIVE</p> 
                     </div>
                     <div class="col-md-2 pl-4 align-self-center">
                         <pre id="arrowdownB-1" class="asciiScissWhite"> 
@@ -165,7 +167,7 @@
                         <div class="col-md-11 pt-3 pb-3 testi-about">
                             The aim of the website is to collect and cluster all the memes shared on a specific subreddit during an internationally significant phenomenon, to understand their language and purpose.<br><br>
                             We want to inform not only who has no knowledge about memetic warfare but also the people that, despite their consciousness, are not aware of the links between the classic techniques of propaganda and Memetic Warfare.<br><br>
-                            The starting point of this project is the website <a href="https://densitydesign.github.io/teaching-dd15/course-results/es02/group03/" target="_blank" class="link-about">The Warfare of Funny Images on the Internet</a>, which contains the results of our multi-channel research about Memetic Warfare: we found out that memes can be a spreading-functional container for political ideas during a specific event. Some of the findings have shown that there is little knowledge of the topic, despite governments themselves have been studying the phenomenon and its potential from a while. An example of the use of memetic warfare can be found during the recent protest in Hong Kong, where, taking advantage of <span id="reddit" onclick="redditLaunch()">Reddit</span>'s anonymity, a large number of memes that attack the Chinese government (more precisely the Chinese Communist Party and his chairman <span id="xijinping">Xi Jinping</span>) and companies who have sided publicly with it have been spread.
+                            The starting point of this project is the website <a href="https://densitydesign.github.io/teaching-dd15/course-results/es02/group03/" target="_blank" class="link-about">The Warfare of Funny Images on the Internet</a>, which contains the results of our multi-channel research about Memetic Warfare: we found out that memes can be a spreading-functional container for political ideas during a specific event. Some of the findings have shown that there is little knowledge of the topic, despite governments themselves have been studying the phenomenon and its potential from a while. An example of the use of memetic warfare can be found during the recent protest in Hong Kong, where, taking advantage of <span id="reddit_btn">Reddit</span>'s anonymity, a large number of memes that attack the Chinese government (more precisely the Chinese Communist Party and his chairman <span id="xijinping">Xi Jinping</span>) and companies who have sided publicly with it have been spread.
                         </div>
 
                         <div id="modal-reddit" class="modal-reddit">
@@ -202,7 +204,7 @@
                             Every user is anonymous, it’s impossible to find out if it’s real or fake.
                         </div>
                         <div class="col-md-11 pt-3 pb-3 testi-about">
-                            With the necessary assets, anyone can create a large number of profiles to simulate a thread and up-vote it with several accounts to make it visible to a large number of users. Every subreddit has moderators, who decide the rules and the flairs (post type labels).<br><br> In the archive is possible to filter all the memes by the propaganda technique used in them or by the target. When we use the word target, we mean the subject or the subjects wich the meme refers to with a negative acceptation. Each of them has its own data sheet where you can find additional information like the template used, according to the classification made on <span id="kym" onclick="kymLaunch()">knowyourmeme.com</span>, and a short description of the message claimed in the meme.
+                            With the necessary assets, anyone can create a large number of profiles to simulate a thread and up-vote it with several accounts to make it visible to a large number of users. Every subreddit has moderators, who decide the rules and the flairs (post type labels).<br><br> In the archive is possible to filter all the memes by the propaganda technique used in them or by the target. When we use the word target, we mean the subject or the subjects wich the meme refers to with a negative acceptation. Each of them has its own data sheet where you can find additional information like the template used, according to the classification made on <span id="kym_btn">knowyourmeme.com</span>, and a short description of the message claimed in the meme.
                         </div>
                         <div>
 
@@ -629,8 +631,41 @@ o  o | o o o       o-o o-o-o    o  o-o o-o | o-o
             </div>
         </footer>
 
+        <script>
+            var modalreddit = document.getElementById("modal-reddit");
+            var spegnireddit = document.getElementById("spegni-reddit");
+            var modalkym = document.getElementById("modal-kym");
+            var spegnikym = document.getElementById("spegni-kym")
 
+            document.getElementById("reddit_btn").addEventListener("click", function() {
+                document.getElementById("modal-reddit").style.display = "block";
+            });
 
+            window.addEventListener("click", function(event) {
+                if (event.target === modalreddit) {
+                    document.getElementById("modal-reddit").style.display = "none";
+                }});
+
+           document.getElementById("spegni-reddit").addEventListener("click", function() {
+                modalreddit.style.display = "none";
+            });
+
+            
+            
+            document.getElementById("kym_btn").addEventListener("click", function() {
+                document.getElementById("modal-kym").style.display = "block";
+            });
+
+            window.addEventListener("click", function(event) {
+                if (event.target === modalkym) {
+                    document.getElementById("modal-kym").style.display = "none";
+                }});
+
+           document.getElementById("spegni-kym").addEventListener("click", function() {
+                modalkym.style.display = "none";
+            });
+
+        </script>
 
 
 

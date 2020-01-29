@@ -1,5 +1,4 @@
 // EXAMPLE json da cambiare //
-// EXAMPLE json da cambiare //
 const petsData = [
   {
     "Num": 1,
@@ -2806,16 +2805,16 @@ span.onclick = function() {
 }
 
 // When the user clicks anywhere outside of the modal, close it //
-window.onclick = function(event) {
-    if (event.target == modal) {
+
+window.addEventListener("click", function(event) {
+        if (event.target == modal) {
         modal.style.display = "none";
         var imgRemover = document.getElementById("immagine")
         imgRemover.removeChild(imgRemover.childNodes[0]);
 
         var aRemover = document.getElementById("propaganda")
         aRemover.removeChild(aRemover.childNodes[0]);
-
-    }}
+}});
 
 
 //---------------------//
@@ -2894,31 +2893,12 @@ function emptyMarquee () {
  
             //////////////////////////////////
             /////////MODAL ABOUT/////////
-            var modalreddit = document.getElementById("modal-reddit");
-            var spegnireddit = document.getElementById("spegni-reddit");
-
-
-
-            function redditLaunch() {
-                modalreddit.style.display = "block";
-            }
-            window.onclick = function(event) {
-                if (event.target == modalreddit) {
-                    modalreddit.style.display = "none";
-                }}
-
-
-            spegnireddit.onclick = function() {
-                modalreddit.style.display = "none";
-            }
 
             $(function() {
                 $("#modal-reddit").draggable();
             });
 
-            $(document).ready(function() {
-                console.log(attivazione)
-            }); 
+        
 
             var modalkym = document.getElementById("modal-kym");
             var spegnikym = document.getElementById("spegni-kym")
@@ -2927,10 +2907,10 @@ function emptyMarquee () {
                 modalkym.style.display = "block";
             }
 
-            window.onclick = function(event) {
+/*            window.onclick = function(event) {
                 if (event.target == modalkym) {
                     modalkym.style.display = "none";
-                }}
+                }}*/
 
             spegnikym.onclick = function() {
                 modalkym.style.display = "none";
