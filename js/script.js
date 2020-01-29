@@ -2898,24 +2898,6 @@ function emptyMarquee () {
                 $("#modal-reddit").draggable();
             });
 
-        
-
-            var modalkym = document.getElementById("modal-kym");
-            var spegnikym = document.getElementById("spegni-kym")
-
-            function kymLaunch() {
-                modalkym.style.display = "block";
-            }
-
-/*            window.onclick = function(event) {
-                if (event.target == modalkym) {
-                    modalkym.style.display = "none";
-                }}*/
-
-            spegnikym.onclick = function() {
-                modalkym.style.display = "none";
-            }
-
             $(function() {
                 $("#modal-kym").draggable();
             });
