@@ -5,6 +5,7 @@ body {
     /* position: absolute;*/
 }
 
+
 :root {
     --main-navbartext-color: black;
     --main-navbartext-size: 1.8vw;
@@ -53,9 +54,9 @@ body {
     border-radius: 0rem;
 }
 
- .mobile {
-        display: none;
-    }
+.mobile {
+    display: none;
+}
 
 .dropdown-item{
     color: var(--main-navbartext-color);
@@ -159,10 +160,47 @@ p {
     font-weight: 900;
 }
 
+.whoProjname {
+    color: white;
+}
+
 .cornice {
     overflow-x: hidden;
     padding: 0;
 }
+
+.asciifilters {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.5vw;
+    color: black;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.ascii_credits {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 0.5vw;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.whoProj {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 0.2vw;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.asciiScissWhite {
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    font-size: 0.8vw;
+    line-height: 1;
+    font-weight: 900;
+}
+
 
 
 /*//////////////////////ARCHIVIO//////////////////////*/
@@ -251,6 +289,8 @@ img {
     padding-left: 1vw;
     line-height: 1.3;
 }
+
+
 
 
 
@@ -467,36 +507,18 @@ a:hover {
 
 #demo {
     position: absolute;
+    width: 30%;
+    
 }
-
-.stella {
-    background: red;
-    /*width: 150px;
-    height: 150px;*/
-    width: 120px;
-    height: 120px;
-    position: relative;
-    text-align: center;
-    transform: rotate(20deg);   
-}
-
-.stella:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 120px;
-    height: 120px;
-    background: red;
-    transform: rotate(135deg);
-}
-
 
 .cat {
-    width: 100%;
     position: relative;
-    transform: rotate(-10deg) translate(-8px, 0px);
+    top: 0vh;
+    left: 0vw;
+    z-index: 1;
+    transition: 0.7s ease-in-out;
 }
+
 
 .flag {
     width: 100%;
@@ -511,18 +533,21 @@ a:hover {
 }
 
 .HKinfos {
+    position: relative;
     background: white;
     font-size: var(--main-note-size);
-    width:20vw;
-    border: 0.05rem red solid;
-    color:red;
-    position: relative;
-    top: -5.5rem;
-    left: 8rem;
-    transform: rotate(-20deg);
+    width: 30vw;
+    border: 0.05rem #d400ff solid;
+    top: -6.5rem;
+    left: 10rem;
     padding: 0.5rem;
     text-align: left;
     line-height: 1.2em; 
+    z-index: 1;
+}
+
+.HKinfos p{
+    color: black;
 }
 
 /*smaller screen*/
@@ -670,11 +695,11 @@ mark{
         padding-right: 0.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .desktop {
         display: none;
     }
-    
+
     .mobile {
         display: block;
     }
@@ -765,7 +790,7 @@ mark{
         font-size: 3vw;
         line-height: 1.2em;
     }
-    
+
     .centerSticker {
         position: relative;
         top: 0%;
@@ -799,7 +824,7 @@ mark{
     .animal p {
         font-size: 4vw;
     }
-    
+
     /*SIDEBAR*/
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -808,19 +833,19 @@ mark{
 
 
 @media only screen and (min-width:801px)  { 
-    
+
     .centerSticker {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-    
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .propagandaBox {
-    transform: rotate(-9deg);
-    padding: 0rem;
-    margin-bottom: 10vh;
-}
+        transform: rotate(-9deg);
+        padding: 0rem;
+        margin-bottom: 10vh;
+    }
 
 }
 
@@ -917,40 +942,36 @@ mark{
 }
 
 
-//////////////*COLLAPSIBLE*////////////
+//////////////*COLLAPSIBLE e ABOUT*////////////
 
-.bottone {
-    border: 1px solid white;
-    color:white;
-    font-family: Arial Narrow, Arial, sans-serif;
-    font-size: 6em;
-    text-transform: uppercase;
-    height: 29vh;
-}
+
+
 
 
 .background-about {
-    background: url("/assets/img/bg.jpg")no-repeat center center fixed;;
+    background: url("/assets/img/bg.jpg")no-repeat center center fixed;
+    background-color: black;
 }
+
 
 
 .card-body {
     background-color: transparent;
-    color: white;
+    padding-left: 0px;
 }
 
 .titoli-about {
     font-size: 5vw;
     line-height: 1em;
+    color: white;
 }
 
 .testi-about {
     font-size: 2vw;
     line-height: 1.1em;
     z-index: 1; 
+    color: white;
 }
-
-
 
 
 #formica, #img-NewHampshire, #img-cheezburger, #img-xijinping, #img-iran, #img-brexit, #img-hkprotest, #img-memetic .visible {
@@ -1002,6 +1023,23 @@ mark{
     text-decoration: underline;
 }
 
+
+.bottone {
+    background-color: black;
+    color: white;
+    font-family: Arial Narrow, Arial, sans-serif;
+    font-size: 5em;
+    text-transform: uppercase;
+    height: 20vh;
+    padding-bottom: 1vh;
+    position: relative;
+    
+}
+
+#about {
+    padding-top: 13vh;
+    padding-bottom: 2vh;
+}
 
 /*PROTOCOL*/
 .st0{fill:#FFFFFF;}
@@ -1098,6 +1136,30 @@ mark{
 }
 
 
+
+.logodensity {
+    width: 4vw;
+}
+
+.logoPolimi {
+    width: 11vw;
+}
+
+.footer {
+    margin-top: 3em;
+    padding-top: 7em;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
+    height: 40vh;
+}
+
+.footertext {
+    color:black;
+    font-family: Arial Narrow, Arial, sans-serif;
+    
+    
+}
+
 /**************CURTAIN E INTRODUZIONE**********/
 
 #curtain,
@@ -1161,3 +1223,8 @@ canvas {
     text-decoration: underline;
     cursor: pointer;
 }
+
+/*/////////*/
+
+#poster{height:20rem;
+margin-top:-5rem;}
